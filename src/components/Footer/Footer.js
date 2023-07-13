@@ -1,9 +1,11 @@
 import "./footer.css";
+import FooterKasa from "../../assets/FooterKasa.png";
 
 function Footer() {
   return (
-    <footer>
-      <h3>FOOTER</h3>
+    <footer className="footer">
+      <img src={FooterKasa} alt="Kasa" />
+      <p className="copyright">© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 }

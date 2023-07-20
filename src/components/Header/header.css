@@ -4,6 +4,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 100px 30px 100px;
 }
 ul {
   display: flex;
@@ -16,6 +17,7 @@ img {
 a {
   color: #ff6060;
 }
+
 li:hover,
 li:active {
   text-decoration: underline;

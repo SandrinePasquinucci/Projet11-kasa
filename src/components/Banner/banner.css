@@ -1,0 +1,26 @@
+.banner {
+  display: grid;
+  place-items: center;
+  border-radius: 25px;
+  position: relative;
+  height: 223px;
+  background-color: black;
+  margin: 0 100px 20px 100px;
+}
+.banner > * {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.bannerimage {
+  border-radius: 25px;
+  object-fit: cover;
+  height: 223px;
+  opacity: 0.6;
+}
+
+.bannertitre {
+  color: white;
+  text-align: center;
+  z-index: 2;
+}

@@ -6,6 +6,10 @@ import Apropos from "./pages/Apropos/Apropos";
 import Error from "./pages/Error/Error";
 import Layout from "./components/Layout/Layout";
 
+//https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react-fr
+// import your fontawesome library
+import "./fontawesome";
+
 export default function App() {
   return (
     <BrowserRouter>

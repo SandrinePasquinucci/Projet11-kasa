@@ -18,11 +18,11 @@ a {
   color: #ff6060;
 }
 
-li:hover,
+/* li:hover,
 li:active {
   text-decoration: underline;
   color: #ff6060;
-}
+} */
 
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {

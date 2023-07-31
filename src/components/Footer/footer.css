@@ -1,10 +1,18 @@
 footer {
   height: 209px;
   background-color: #000;
-  display: grid;
-  place-items: center;
-  margin: 0 100px;
+  /* display: grid;
+  place-items: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 p {
   color: white;
+}
+
+img {
+  height: 39px;
 }

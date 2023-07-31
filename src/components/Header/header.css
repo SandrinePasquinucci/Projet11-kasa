@@ -16,17 +16,30 @@ img {
 }
 a {
   color: #ff6060;
+  text-decoration: underline;
 }
 
-/* li:hover,
-li:active {
+.menuactif:hover,
+.menunonactif:hover {
   text-decoration: underline;
   color: #ff6060;
-} */
+}
+
+.menuactif {
+  text-decoration: underline;
+  color: #ff6060;
+}
+
+.menunonactif {
+  text-decoration: none;
+}
 
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {
   header {
     height: 40px;
+  }
+  h1 {
+    height: 90%;
   }
 }

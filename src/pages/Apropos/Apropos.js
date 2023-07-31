@@ -1,16 +1,5 @@
-// import "./apropos.css";
-
-// function Apropos() {
-//   return (
-//     <div className="apropos">
-//       <h3>A PROPOS</h3>
-//     </div>
-//   );
-// }
-
-// export default Apropos;
-
 import "./apropos.css";
+import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import Collapse from "../../components/Collapse/Collapse";
 import aproposimage from "../../assets/apropos.png";
@@ -29,12 +18,13 @@ const valeurs = {
 const Apropos = () => {
   return (
     <>
+      <Header />
       <Banner texte="" image={aproposimage} />
       <section className="valeurs">
-        <Collapse detail={valeurs.fiabilité} titre="Fiabilité" />
-        <Collapse detail={valeurs.respect} titre="Respect" />
-        <Collapse detail={valeurs.service} titre="Service" />
-        <Collapse detail={valeurs.securité} titre="Securité" />
+        <Collapse page="Apropos" titre="Fiabilité" detail={valeurs.fiabilité} />
+        <Collapse page="Apropos" titre="Respect" detail={valeurs.respect} />
+        <Collapse page="Apropos" titre="Service" detail={valeurs.service} />
+        <Collapse page="Apropos" titre="Securité" detail={valeurs.securité} />
       </section>
     </>
   );

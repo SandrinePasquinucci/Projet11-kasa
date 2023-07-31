@@ -6,38 +6,41 @@ import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Collapse({ titre, detail }) {
+export default function Collapse({ page, titre, detail }) {
   const [isActive, setIsActive] = useState(false);
 
   function menuActif() {
     setIsActive(!isActive);
   }
-  return (
-    <div className="menuderoulant">
-      {isActive === false ? (
-        <div className="menuferme">
-          <div className="titre" onClick={menuActif}>
-            {titre}
 
-            <FontAwesomeIcon
-              icon="fa-solid fa-chevron-down"
-              style={{ color: "white" }}
-            />
-          </div>
-        </div>
-      ) : (
-        <div className="menuouvert">
-          <div className="titre" onClick={menuActif}>
-            {titre}
+  if (page === "Apropos") {
+    return (
+      <div className="menuderoulant">
+        {isActive === false ? (
+          <div className="menuferme">
+            <div className="titre" onClick={menuActif}>
+              {titre}
 
-            <FontAwesomeIcon
-              icon="fa-solid fa-chevron-up"
-              style={{ color: "white" }}
-            />
+              <FontAwesomeIcon
+                icon="fa-solid fa-chevron-down"
+                style={{ color: "white" }}
+              />
+            </div>
           </div>
-          <p className="detail">{detail}</p>
-        </div>
-      )}
-    </div>
-  );
+        ) : (
+          <div className="menuouvert">
+            <div className="titre" onClick={menuActif}>
+              {titre}
+
+              <FontAwesomeIcon
+                icon="fa-solid fa-chevron-up"
+                style={{ color: "white" }}
+              />
+            </div>
+            <p className="detail">{detail}</p>
+          </div>
+        )}
+      </div>
+    );
+  }
 }

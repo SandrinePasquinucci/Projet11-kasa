@@ -1,7 +1,7 @@
 import "./card.css";
 import { Link } from "react-router-dom";
 
-export default function Card({ src, title, href }) {
+export default function Card({ href, src, title }) {
   return (
     <Link to={`logement/${href}`} className="cardlink">
       <img src={src} alt={title} className="cardimg"></img>

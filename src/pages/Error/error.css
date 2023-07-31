@@ -1,0 +1,41 @@
+.page404 {
+  margin: 0 100px 30px 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  color: #ff6060;
+  font-weight: 500;
+}
+
+.Erreur404 {
+  font-weight: 700;
+  font-size: 288px;
+}
+
+.MessageErreur {
+  font-size: 36px;
+  padding-bottom: 160px;
+  text-align: center;
+}
+
+.RetourAccueil {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #ff6060;
+}
+
+/* RESPONSIVE : Version Smartphones */
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .Erreur404 {
+    font-size: 96px;
+  }
+
+  .MessageErreur {
+    font-size: 18px;
+  }
+
+  .RetourAccueil {
+    font-size: 14px;
+  }
+}

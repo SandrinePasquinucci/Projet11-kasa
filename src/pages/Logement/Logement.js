@@ -9,11 +9,12 @@ import { useParams } from "react-router-dom";
 
 export default function Logement() {
   //https://lo-victoria.com/a-look-at-react-hooks-useparams-for-dynamic-routing
+  //Object { id: "b9123946" }
   const ID = useParams("id").id;
   const LogementActuel = logements.find((logement) => logement.id === ID);
   // const { id } = useParams(); //get the URL parameter
   // const LogementActuel = logements.find((logement) => (logement.id = { id }));
-
+  // console.log(useParams());
   return (
     <>
       <Header />
@@ -26,19 +27,23 @@ export default function Logement() {
         <div className="Logement__ville">{LogementActuel.location}</div>
 
         <div className="Logement__tags">
-          {/* <Tags tag={LogementActuel.tags} /> */}
           {LogementActuel.tags.map((tag) => {
-            return <div key={tag}>{tag}</div>;
+            return (
+              <div key={tag} className="tag">
+                {tag}
+              </div>
+            );
           })}
         </div>
-        <div className="Logement__hoteportrait">
+
+        <div className="Logement__hote">
+          <div className="Logement__hoteidentite">
+            {LogementActuel.host.name}
+          </div>
           <img
             src={LogementActuel.host.picture}
             alt={LogementActuel.host.picture}
           />
-        </div>
-        <div className="Logement__hotenom">
-          <p>{LogementActuel.host.name}</p>
         </div>
         <div className="Logement__etoiles">
           <Rates etoiles={LogementActuel.rating} />

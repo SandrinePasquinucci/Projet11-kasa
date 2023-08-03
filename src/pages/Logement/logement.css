@@ -1,41 +1,89 @@
+/* container */
 .Logement {
   display: grid;
-  height: auto;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5);
   justify-content: space-between;
   grid-template-areas:
-    "Slidshow Slideshow Slideshow Slideshow"
-    "Logement__titre Logement__titre Logement__hotenom Logement_hoteportrait"
-    "Logement__ville Logement__ville Logement__hotenom Logement_hoteportrait"
-    "Logement__tags Logement__tags Logement__etoiles Logement_etoiles"
-    "Logement__collapse1 Logement__collapse1 Logement__collapse2 Logement_collapse2";
+    "Slideshow  Slideshow"
+    "Logement__titre  Logement__hote"
+    "Logement__ville  Logement__hote"
+    "Logement__tags  Logement__etoiles"
+    "Logement__collapse1  Logement__collapse2";
   gap: 10px;
-  margin: 0 100px 30px 100px;
+  margin: 0 100px;
   color: #ff6060;
 }
 
+/* Carrousel */
 .Slideshow {
   grid-area: Slideshow;
+  height: 415px;
+  object-fit: cover;
 }
+
+/* Titre */
 .Logement__titre {
   grid-area: Logement__titre;
+  font-size: 36px;
 }
+
+/* Ville */
 .Logement__ville {
   grid-area: Logement__ville;
+  color: #ff6060;
+  font-size: 18px;
 }
-.Logement__hotenom {
-  grid-area: Logement__hotenom;
+
+/* Hote  */
+.Logement__hote {
+  grid-area: Logement__hote;
+  justify-self: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  gap: 50px;
 }
-.Logement__hoteportrait {
-  grid-area: Logement__hoteportrait;
+/* NomPrénom */
+.Logement__hoteidentite {
+  font-size: 18px;
+  width: 60px;
+  align-self: center;
+  text-align: right;
 }
+
+/* Hote Image */
+.Logement__hote > img {
+  width: 64px;
+  height: 64px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+
 .Logement__tags {
   grid-area: Logement__tags;
+  display: flex;
+  gap: 10px;
 }
+.tag {
+  width: 115px;
+  height: 25px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: #ff6060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Logement__etoiles {
   grid-area: Logement__etoiles;
+  justify-self: end;
+  margin: auto 0;
 }
+
 .Logement__collapse1 {
   grid-area: Logement__collapse1;
 }
@@ -43,16 +91,25 @@
   grid-area: Logement__collapse2;
 }
 
-.Logement__titre > h2 {
-  font-size: 36px;
-}
-.Logement__titre > p {
-  color: #ff6060;
-  font-size: 18px;
-}
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .Logements {
-    margin: 0 100px 30px 100px;
+  .Logement {
+    margin: 0 30px 30px 30px;
+    grid-template-rows: repeat(7);
+    grid-template-areas:
+      "Slideshow Slideshow"
+      "Logement__titre Logement__titre"
+      "Logement__ville Logement__ville"
+      "Logement__tags Logement__tags"
+      "Logement__etoiles  Logement__hote"
+      "Logement__collapse1 Logement__collapse1"
+      "Logement__collapse2 Logement__collapse2";
+  }
+  .Logement__etoiles {
+    justify-self: start;
+  }
+  .Logement__hote > img {
+    width: 32px;
+    height: 32px;
   }
 }

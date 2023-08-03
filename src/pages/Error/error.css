@@ -29,10 +29,12 @@
 @media all and (min-width: 320px) and (max-width: 768px) {
   .Erreur404 {
     font-size: 96px;
+    padding-top: 260px;
   }
 
   .MessageErreur {
     font-size: 18px;
+    width: 70%;
   }
 
   .RetourAccueil {

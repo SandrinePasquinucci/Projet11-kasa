@@ -1,4 +1,8 @@
-.slideshow {
+.image {
+  height: 415px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25px;
 }
 
 /* RESPONSIVE : Version Smartphones */

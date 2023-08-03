@@ -11,22 +11,24 @@ export default function Rates({ etoiles }) {
 
   return (
     <div className="etoile">
-      {EtoileRouge.map((star, index) => {
+      {EtoileRouge.map((index) => {
         return (
           //Warning: Each child in a list should have a unique "key" prop.
           <FontAwesomeIcon
             key={index}
             icon="fa-solid fa-star"
             style={{ color: "#ff6060" }}
+            class="star"
           />
         );
       })}
-      {EtoileGrise.map((star, index) => {
+      {EtoileGrise.map((index) => {
         return (
           <FontAwesomeIcon
             key={index}
             icon="fa-solid fa-star"
             style={{ color: "#E3E3E3" }}
+            class="star"
           />
         );
       })}

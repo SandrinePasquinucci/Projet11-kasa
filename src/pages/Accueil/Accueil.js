@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import Gallery from "../../components/Gallery/Gallery";
 import bannerimage from "../../assets/banniere.png";
+import Footer from "../../components/Footer/Footer";
 
 const bannertitre = "Chez vous, partout et ailleurs";
 const Accueil = () => {
@@ -10,7 +11,9 @@ const Accueil = () => {
     <>
       <Header />
       <Banner texte={bannertitre} image={bannerimage} />
+
       <Gallery />
+      <Footer />
     </>
   );
 };

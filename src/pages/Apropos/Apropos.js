@@ -3,6 +3,7 @@ import Header from "../../components/Header/Header";
 import Banner from "../../components/Banner/Banner";
 import Collapse from "../../components/Collapse/Collapse";
 import aproposimage from "../../assets/apropos.png";
+import Footer from "../../components/Footer/Footer";
 
 const valeurs = {
   fiabilité:
@@ -21,11 +22,12 @@ const Apropos = () => {
       <Header />
       <Banner texte="" image={aproposimage} />
       <section className="valeurs">
-        <Collapse page="Apropos" titre="Fiabilité" detail={valeurs.fiabilité} />
-        <Collapse page="Apropos" titre="Respect" detail={valeurs.respect} />
-        <Collapse page="Apropos" titre="Service" detail={valeurs.service} />
-        <Collapse page="Apropos" titre="Securité" detail={valeurs.securité} />
+        <Collapse titre="Fiabilité" detail={valeurs.fiabilité} />
+        <Collapse titre="Respect" detail={valeurs.respect} />
+        <Collapse titre="Service" detail={valeurs.service} />
+        <Collapse titre="Securité" detail={valeurs.securité} />
       </section>
+      <Footer />
     </>
   );
 };

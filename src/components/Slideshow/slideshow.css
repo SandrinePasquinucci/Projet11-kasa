@@ -1,10 +1,8 @@
-.valeurs {
-  margin: 0 150px 50px 150px;
+.slideshow {
 }
 
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .valeurs {
-    margin: 0 100px 30px 100px;
+  .slideshow {
   }
 }

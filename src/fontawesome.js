@@ -3,6 +3,10 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 
 // import your icons
 
-import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronUp,
+  faChevronDown,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faChevronUp, faChevronDown);
+library.add(faChevronUp, faChevronDown, faStar);

@@ -16,9 +16,8 @@ export default function Rates({ etoiles }) {
           //Warning: Each child in a list should have a unique "key" prop.
           <FontAwesomeIcon
             key={index}
-            icon="fa-solid fa-star"
+            icon="fa-solid fa-star star"
             style={{ color: "#ff6060" }}
-            class="star"
           />
         );
       })}
@@ -26,9 +25,8 @@ export default function Rates({ etoiles }) {
         return (
           <FontAwesomeIcon
             key={index}
-            icon="fa-solid fa-star"
+            icon="fa-solid fa-star star"
             style={{ color: "#E3E3E3" }}
-            class="star"
           />
         );
       })}

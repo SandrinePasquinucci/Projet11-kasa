@@ -7,6 +7,8 @@ import {
   faChevronUp,
   faChevronDown,
   faStar,
+  faChevronLeft,
+  faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faChevronUp, faChevronDown, faStar);
+library.add(faChevronUp, faChevronDown, faStar, faChevronLeft, faChevronRight);

@@ -3,11 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Rates({ etoiles }) {
   //Etoiles
-  const EtoileRouge = Array.from({ length: etoiles }, (value, index) => index);
-  const EtoileGrise = Array.from(
-    { length: 5 - etoiles },
-    (value, index) => index
-  );
+  const EtoileRouge = Array.from({ length: etoiles }, (index) => index);
+  const EtoileGrise = Array.from({ length: 5 - etoiles }, (index) => index);
 
   return (
     <div className="etoile">

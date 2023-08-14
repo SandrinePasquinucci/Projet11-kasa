@@ -30,13 +30,14 @@ export default function Slideshow({ id }) {
   };
 
   return (
-    <section
+    <div    
+      className="carrousel" 
       style={{ backgroundImage: `url(${imageSlider[slideIndex]})` }}
-      className="slideshow"
     >
+   
       <FontAwesomeIcon
         icon="fa-solid fa-chevron-left prevSlide"
-        style={{ color: "white" }}
+                style={{ color: "white" }}
         onClick={prevSlide}
       />
 
@@ -45,6 +46,6 @@ export default function Slideshow({ id }) {
         style={{ color: "white" }}
         onClick={nextSlide}
       />
-    </section>
+    </div>
   );
 }

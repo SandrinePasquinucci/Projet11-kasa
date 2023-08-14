@@ -1,22 +1,24 @@
-.slideshow {
+.carrousel {
   position: relative;
-  height: 415px;
-  object-fit: cover;
-  width: 100%;
   border-radius: 25px;
+  height: 415px;
+  object-fit: fill;
+  display: flex;
+  align-items: center;
+  background-size: cover;
 }
 
-.prevSlide {
+.fa-chevron-left {
   position: absolute;
-  top: 50%;
+
   height: 15%;
   cursor: pointer;
   left: 25px;
 }
 
-.nextSlide {
+.fa-chevron-right {
   position: absolute;
-  top: 50%;
+
   height: 15%;
   cursor: pointer;
   right: 25px;
@@ -24,6 +26,7 @@
 
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .slideshow {
+  .carrousel {
+    height: 255px;
   }
 }

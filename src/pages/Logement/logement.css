@@ -18,8 +18,11 @@
 /* Carrousel */
 .Slideshow {
   grid-area: Slideshow;
-  height: 415px;
+  /* height: 415px;
   object-fit: cover;
+  position: relative; */
+  /* position: relative; */
+ 
 }
 
 /* Titre */

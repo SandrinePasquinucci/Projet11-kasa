@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Rates({ etoiles }) {
   //Etoiles
-  const EtoileRouge = Array.from({ length: etoiles }, (index) => index);
-  const EtoileGrise = Array.from({ length: 5 - etoiles }, (index) => index);
+  const EtoileRouge = Array.from({ length: etoiles }, (value, index) => index);
+  const EtoileGrise = Array.from(
+    { length: 5 - etoiles },
+    (value, index) => index
+  );
 
   return (
     <div className="etoile">
@@ -13,7 +16,7 @@ export default function Rates({ etoiles }) {
           //Warning: Each child in a list should have a unique "key" prop.
           <FontAwesomeIcon
             key={index}
-            icon="fa-solid fa-star star"
+            icon="fa-solid fa-star"
             style={{ color: "#ff6060" }}
           />
         );
@@ -22,7 +25,7 @@ export default function Rates({ etoiles }) {
         return (
           <FontAwesomeIcon
             key={index}
-            icon="fa-solid fa-star star"
+            icon="fa-solid fa-star"
             style={{ color: "#E3E3E3" }}
           />
         );

@@ -22,6 +22,6 @@
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {
   .titre {
-    font-size: 13 px;
+    font-size: 13px;
   }
 }

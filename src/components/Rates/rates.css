@@ -1,4 +1,4 @@
-.star {
+.fa-star {
   width: 24.75px;
   height: 24px;
   padding-left: 20px;
@@ -6,7 +6,7 @@
 
 /* RESPONSIVE : Version Smartphones */
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .star {
+  .fa-star {
     padding-left: 0;
     width: 13.41px;
     height: 13px;
